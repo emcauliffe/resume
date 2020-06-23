@@ -1,0 +1,198 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+% (c) 2020 Ethan McAuliffe <ethan@emcauliffe.ca> https://emcauliffe.ca
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{etoolbox}
+\robustify\cftdotfill
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{0pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+\renewcommand\labelitemi{--}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+		\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{\vspace{-7pt}
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{#1} & #2 \\
+	\ifstrempty{#3}{
+		%
+	}{
+		\textit{#3} & #4 \\
+	}
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+% \textbf{\Huge $header.name$} & \textbf{\today} \\
+\textbf{\Huge $header.name$} & $header.mobile-number$ \\
+$header.about$ & $header.email$ \\
+$header.github$ & $header.website$ \\
+\end{tabular*}\vspace{2pt}
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(education)$
+\begin{description}[leftmargin=0cm]
+\item
+	% School name, degree, and time duration
+	\ressubheading{$education.school$}{$education.location$}{$education.degree$}{$education.start-date$ - $education.end-date$}
+	$if(education.info)$
+	\begin{itemize}
+		\resitem{$education.info$ $if(education.average)$($education.average$)$endif$}
+	$if(education.coursework)$$else$\end{itemize}\vspace{-10pt}$endif$
+	$endif$
+		% 
+	$if(education.coursework)$
+		$if(education.info)$$else$\begin{itemize}$endif$
+		$for(education.coursework)$
+			\resitem{\textit{$education.coursework.course-name$} - $if(education.coursework.blurb)$ $education.coursework.blurb$ $endif$ $if(education.coursework.grade)$ (mark: $education.coursework.grade$) $endif$}
+		$endfor$
+		\end{itemize}\vspace{-10pt}
+	$endif$
+\end{description}
+$endfor$
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(work-experience)$
+\begin{description}[leftmargin=0cm]
+\item
+	% job title, company, location, and tenure
+	\ressubheading{$work-experience.job-title$}{$work-experience.location$}{$work-experience.company$}{$work-experience.start-date$ - $work-experience.end-date$}
+	% some points about the job
+	\begin{itemize}
+	$for(work-experience.blurb)$
+		\resitem{$work-experience.blurb$}
+	$endfor$
+	\end{itemize}\vspace{-10pt}
+\end{description}
+$endfor$
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Personal Projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(personal-projects)$
+\begin{description}[leftmargin=0cm]
+\item
+	% job title, company, location, and tenure
+	\ressubheading{$personal-projects.title$}{}{}{}
+	% some points about the job
+	\begin{itemize}
+	$for(personal-projects.blurb)$
+		\resitem{$personal-projects.blurb$}
+	$endfor$
+	\end{itemize}\vspace{-10pt}
+\end{description}
+$endfor$
+% 
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Volunteering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(volunteer-experience)$
+\begin{description}[leftmargin=0cm]
+\item
+	% job title, company, location, and tenure
+	\ressubheading{$volunteer-experience.job-title$}{$volunteer-experience.location$}{$volunteer-experience.company$}{$volunteer-experience.start-date$ - $volunteer-experience.end-date$}
+	% some points about the job
+	\begin{itemize}
+	$for(volunteer-experience.blurb)$
+		\resitem{$volunteer-experience.blurb$}
+	$endfor$
+	\end{itemize}\vspace{-10pt}
+\end{description}
+$endfor$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Extracurriculars}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(extracurriculars)$
+\begin{description}[leftmargin=0cm]
+\item
+	% activity, start date, end date, location
+	\ressubheading{$extracurriculars.title$}{$extracurriculars.start-date$ $if(extracurriculars.end-date)$- $extracurriculars.end-date$$endif$}{$extracurriculars.location$}{}
+	% some points about the job
+	\begin{itemize}
+	$for(extracurriculars.blurb)$
+		\resitem{$extracurriculars.blurb$}
+	$endfor$
+	\end{itemize}
+
+\end{description}
+$endfor$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Skills}\vspace{-20pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multicols*}{3}
+\ressubheading{Software}{}{}{}
+	\begin{itemize}
+		$for(skills.software)$
+			\item{$skills.software$}\vspace{-7pt}
+		$endfor$
+	\end{itemize}
+\vfill\null
+\columnbreak
+%
+\ressubheading{Programming Experience}{}{}{}
+	\begin{itemize}
+		$for(skills.programming-experience)$
+			\item{$skills.programming-experience$}\vspace{-7pt}
+		$endfor$
+	\end{itemize}
+\vfill\null
+\columnbreak
+%
+\ressubheading{Communication}{}{}{}
+	\begin{itemize}
+		$for(skills.communication)$
+			\item{$skills.communication$}\vspace{-7pt}
+		$endfor$
+	\end{itemize}
+\end{multicols*}
+% 
+\end{document}

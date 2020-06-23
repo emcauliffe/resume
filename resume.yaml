@@ -1,119 +1,120 @@
 ---
-  - header:
-      name: Ethan McAuliffe
-      email: ethan@emcauliffe.ca
-      mobile-number: (416)559-5145
-      website: emcauliffe.ca
-      github: https://github.com/emcauliffe
-      linkedin: https://www.linkedin.com/in/ethan-mcauliffe/
-  - education:
-    - degree: Bachelor of Computer and Management Engineering (Co-op)
-      school: McMaster University
-      location: Hamilton, ON
-      start-date: Sept. 2018
-      end-date: Present
-      info: Completed 2nd year Engineering
-      average: 3.9 GPA
-      coursework:
-        - course-name: CompEng 2SI4 & 2SH4
-          blurb: Acquired an in-depth understanding of Python, C, and Java through labwork and testing.
-          grade: 4.0 and 3.8 respectively
-    - degree: Ontario Secondary School Diploma (and AP credits)
-      school: Royal St. George's College
-      location: Toronto, ON
-      start-date: Sept. 2014
-      end-date: June 2018
-      coursework:
-        - course-name: TEI4M
-          blurb: > 
-            Learned the fundamentals of computer engineering through a variety of projects 
-            such as building a breadboard computer, programming PWM fan control with USART 
-            readout in assembly, and more
-  - work-experience:
-    - job-title: Software Engineering Intern
-      company: RT7 Inc.
-      location: Toronto, ON
-      start-date: May 2019
-      end-date: Aug. 2019
-      blurb:
-        - Gained experience as a member of a development team in a work environment
-        - Wrote documentation for existing Swift codebase
-        - Rebuilt existing product from scratch with React Native, learning JavaScript and development best practices in the process #add what I learned from this
-        # - Practiced attention to detail when generating new apps and publishing with accurate info to the App Store
-        # - Gained experience with GUI development through collaboration with design team
-    - job-title: Summer Intern
-      company: Achiga Inc. & Concierge Plus
-      location: Toronto, ON
-      start-date: July 2018
-      end-date: Aug. 2018
-      blurb:
-        - Reduced accounts receivable over 90 days by 80+% through effective communications with past due customers
-        - Extensive experience identifying and eliminating anomalies with money records/data
-        - Developed professional interpersonal skills through daily interaction with customers
-  - personal-projects:
-    - title: Bottles Against COVID
-      blurb: 
-        - Built a full-stack web 
-    - title: DeltaHacks VI Hackathon - StoryTime
-      blurb:
-        - Worked in a team of 3 to build a react native mobile application + REST API backend to generate short stories for users to read instead of scrolling through social media feeds
-    - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
-      blurb:
-        - Gained extensive knowledge in the working of computers on a binary programming level
-  - volunteer-experience: 
-    - job-title: Technical Assistant (TA)
-      company: Royal St. George's College
-      start-date: Sept. 2017
-      end-date: June 2018
-      blurb: 
-        - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
-        - Assumed a position of responsibility requiring maintenance and supervision of school workspace
-  - extracurriculars: 
-    - title: SHAD Valley
-      location: Lakehead University
-      start-date: July 2017
-      end-date: July 2017
-      blurb:
-       - Worked with other participants from across the country to develop a product and a business plan with the goal of reducing the energy footprint of individual Canadians
-       - Placed 1st regionally & qualified for national SHAD Cup competition
-    - title: Ice Hockey
-      start-date: 2006
-      end-date: Present
-      blurb:
-        - Former member of rep level hockey, high school varsity teams
-        - Current member of McMaster intramural teams
-        - Instrumental in my development of teamwork skills and ability to work in a fast-paced environment
-  - skills:
-    software:
-      - Atmel Studio 7
-      - VSCode
-      - Xcode
-      - Git
-      - EAGLE PCB design
-      - Autodesk Inventor & Fusion 360
-      - \*NIX Systems (Debian, FreeBSD, OS X)
-      - QuickBooks, QuickBooks Online
-      - MS Office
-      - Google Analytics
-      - Flask
-      - MongoDB
-      - LaTeX
-      - Nginx
-    programming-experience:
-      - Java
-      - Python
-      - C
-      - C++ (Arduino)
-      - AVR Assembly
-      - JavaScript
-      - ReactJS & React Native
-      - Swift
-      - MATLAB
-      - Bash (zsh)
-      - I2C
-      - SPI
-      - USART
-    communication:
-      - English
-      - French (DELF B1 Certified)
+header:
+  name: Ethan McAuliffe
+  about: 3rd year Computer and Management Engineering student
+  email: ethan@emcauliffe.ca
+  mobile-number: (416) 559-5145
+  website: https://emcauliffe.ca
+  github: https://github.com/emcauliffe
+  linkedin: https://www.linkedin.com/in/ethan-mcauliffe/
+education:
+  - degree: Bachelor of Computer and Management Engineering (Co-op)
+    school: McMaster University
+    location: Hamilton, ON
+    start-date: Sept. 2018
+    end-date: Present
+    info: Completed 2nd year Engineering
+    average: Cumulative 3.8 GPA
+    coursework:
+      - course-name: CompEng 2SI4 & 2SH4
+        blurb: Acquired an in-depth understanding of Python, C, and Java through labwork and testing.
+        grade: 4.0 & 3.8 respectively
+  - degree: Ontario Secondary School Diploma (and AP credits)
+    school: Royal St. George's College
+    location: Toronto, ON
+    start-date: Sept. 2014
+    end-date: June 2018
+    coursework:
+      - course-name: TEI4M
+        blurb: > 
+          Learned the fundamentals of computer engineering through a variety of projects 
+          such as building a breadboard computer, programming PWM fan control with USART 
+          readout in assembly, and more
+work-experience:
+  - job-title: Software Engineering Intern
+    company: RT7 Inc.
+    location: Toronto, ON
+    start-date: May 2019
+    end-date: Aug. 2019
+    blurb:
+      - Gained experience as a member of a development team in a work environment
+      - Wrote documentation for existing Swift codebase
+      - Rebuilt existing product from scratch with React Native, learning JavaScript and development best practices in the process #add what I learned from this
+      - Practiced attention to detail when generating new apps and publishing with accurate info to the App Store
+      # - Gained experience with GUI development through collaboration with design team
+  - job-title: Summer Intern
+    company: Achiga Inc. & Concierge Plus
+    location: Toronto, ON
+    start-date: July 2018
+    end-date: Aug. 2018
+    blurb:
+      - Reduced accounts receivable over 90 days by 80+% through effective communications with past due customers
+      - Extensive experience identifying and eliminating anomalies with money records/data
+      - Developed professional interpersonal skills through daily interaction with customers
+personal-projects:
+  - title: Bottles Against COVID
+    blurb: 
+      - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
+      - Ran a bottle drive every week and raised over $3000 for St. Joe's Hospital
+  - title: DeltaHacks VI Hackathon - StoryTime
+    blurb:
+      - Worked in a team of 3 to build a React Native mobile application + REST API backend to generate short stories for users to read instead of scrolling through social media feeds
+  - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
+    blurb:
+      - Gained extensive knowledge in the working of computers on a binary programming level
+volunteer-experience: 
+  - job-title: Technical Assistant (TA)
+    company: Royal St. George's College
+    start-date: Sept. 2017
+    end-date: June 2018
+    blurb: 
+      - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
+      - Assumed a position of responsibility requiring maintenance and supervision of school workspace
+extracurriculars: 
+  - title: SHAD Valley
+    location: Lakehead University
+    start-date: July 2017
+    blurb:
+      - Worked with other participants from across the country to develop a product and a business plan with the goal of reducing the energy footprint of individual Canadians
+      - Placed 1st regionally & qualified for national SHAD Cup competition
+  - title: Ice Hockey
+    start-date: 2006
+    end-date: Present
+    blurb:
+      - Former member of rep level hockey, high school varsity teams
+      - Current member of McMaster intramural teams
+      - Instrumental in my development of teamwork skills and ability to work in a fast-paced environment
+skills:
+  software:
+    - Atmel Studio 7
+    - VSCode
+    - Xcode
+    - Git
+    - EAGLE PCB design
+    - Autodesk Inventor & Fusion 360
+    - \*NIX Systems (Debian, FreeBSD, OS X)
+    - QuickBooks, QuickBooks Online
+    - MS Office
+    - Google Analytics
+    - Flask
+    - MongoDB
+    - \LaTeX
+    - Nginx
+  programming-experience:
+    - Java
+    - Python
+    - C
+    - C++ (Arduino)
+    - AVR Assembly
+    - JavaScript
+    - ReactJS & React Native
+    - Swift
+    - MATLAB
+    - Bash (zsh)
+    - I\textsuperscript{2}C
+    - SPI
+    - USART
+  communication:
+    - English
+    - French (DELF B1 Certified)
 ...
