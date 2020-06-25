@@ -17,7 +17,7 @@ education:
     average: Cumulative 3.8 GPA
     coursework:
       - course-name: CompEng 2SI4 & 2SH4
-        blurb: Acquired an in-depth understanding of Python, C, and Java through labwork and testing.
+        blurb: Acquired an in-depth understanding of Python, C, and Java through labwork and testing
         grade: 4.0 & 3.8 respectively
   - degree: Ontario Secondary School Diploma (and AP credits)
     school: Royal St. George's College
@@ -39,7 +39,7 @@ work-experience:
     blurb:
       - Contributing member of a development team in a work environment
       - Wrote documentation for existing Swift codebase
-      - Rebuilt existing product from scratch with React Native, uniting Android and iOS codebases #add what I learned from this
+      - Rebuilt existing product from scratch with React Native, uniting Android and iOS codebases
       - Learned JavaScript and development best practices in the process
       - Practiced attention to detail when generating new apps and publishing with accurate info to the App Store
       # - Gained experience with GUI development through collaboration with design team
@@ -87,20 +87,20 @@ extracurriculars:
       - Instrumental in my development of teamwork skills and ability to work in a fast-paced environment
 skills:
   software:
-    - Atmel Studio 7
-    - VSCode
-    - Xcode
     - Git
+    - Flask
     - EAGLE PCB design
     - Autodesk Inventor & Fusion 360
+    - \LaTeX
+    - Nginx
     - \*NIX Systems (Debian, FreeBSD, OS X)
+    - MongoDB
+    - VSCode
+    - Xcode
+    - Atmel Studio 7
     - QuickBooks, QuickBooks Online
     - MS Office
     - Google Analytics
-    - Flask
-    - MongoDB
-    - \LaTeX
-    - Nginx
   programming-experience:
     - Java
     - Python
