@@ -22,10 +22,11 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it  
     - uses: actions/checkout@v2
     - uses: docker://pandoc/latex
+      with:
+        args: resume.yaml -o resume.pdf --pdf-engine=pdflatex --template=resume-template.tex
 
     - name: make & commit resume
       run: |
-        make -B
         git config user.name emcauliffe
         git config user.email 14607273+emcauliffe@users.noreply.github.com
         git add .
