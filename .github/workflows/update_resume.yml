@@ -20,12 +20,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: fusion-engineering/setup-git-credentials@v2
+      with:
+        credentials: ${{secrets.GIT_CREDENTIALS}
+  
     - uses: actions/checkout@v2
 
     - name: make resume
       run: make
       
     - name: commit 
-      run: git add . && git commit -m "Update resume.pdf for commit $LAST_COMMIT" 
+      run: git add . && git commit -S -m "Update resume.pdf for commit $LAST_COMMIT" 
       env:
         LAST_COMMIT: git ls-remote https://github.com/emcauliffe/resume.git HEAD | cut -c1-7
