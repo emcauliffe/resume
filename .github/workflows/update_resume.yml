@@ -22,7 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: fusion-engineering/setup-git-credentials@v2
       with:
-        credentials: ${{secrets.GIT_CREDENTIALS}
+        credentials: ${{secrets.GIT_CREDENTIALS}}
   
     - uses: actions/checkout@v2
 
