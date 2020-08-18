@@ -63,15 +63,14 @@ personal-projects:
   - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
     blurb:
       - Gained extensive knowledge in the working of computers on a binary programming level
-volunteer-experience: 
-  - job-title: Technical Assistant (TA)
-    company: Royal St. George's College
-    start-date: Sept. 2017
-    end-date: June 2018
-    blurb: 
-      - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
-      - Assumed a position of responsibility requiring maintenance and supervision of school workspace
-extracurriculars: 
+extracurriculars:
+  - title: Software Lead at McMaster Mars Rover
+    location: McMaster University
+    start-date: July 2020
+    end-date: Present
+    blurb:
+      - Coordinate and participate in the development of software for the McMaster mars rover with a team of bright and motivated individuals
+      - Work with ROS to create a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping, and more
   - title: SHAD Valley
     location: Lakehead University
     start-date: July 2017
@@ -85,10 +84,18 @@ extracurriculars:
       - Former member of rep level hockey, high school varsity teams
       - Current member of McMaster intramural teams
       - Instrumental in my development of teamwork skills and ability to work in a fast-paced environment
+volunteer-experience: 
+  - job-title: Technical Assistant (TA)
+    company: Royal St. George's College
+    start-date: Sept. 2017
+    end-date: June 2018
+    blurb: 
+      - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
+      - Assumed a position of responsibility requiring maintenance and supervision of school workspace
 skills:
   software:
     - Git
-    - Flask
+    - Flask & FastAPI
     - EAGLE PCB design
     - Autodesk Inventor & Fusion 360
     - \LaTeX
@@ -99,8 +106,8 @@ skills:
     - Xcode
     - Atmel Studio 7
     - QuickBooks, QuickBooks Online
-    - MS Office
-    - Google Analytics
+    # - MS Office
+    # - Google Analytics
   programming-experience:
     - Java
     - Python
