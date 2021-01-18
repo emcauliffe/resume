@@ -13,12 +13,15 @@ education:
     location: Hamilton, ON
     start-date: Sept. 2018
     end-date: Present
-    info: Completed 2nd year Engineering
+    info: Completed 2.5 years
     average: Cumulative 3.8 GPA
     coursework:
       - course-name: CompEng 2SI4 & 2SH4
         blurb: Acquired an in-depth understanding of Python, C, and Java through labwork and testing
         grade: 4.0 & 3.8 respectively
+      - course-name: CompEng 2DI4
+        blurb: Acquired an in-depth understanding of logic design and Verilog through labwork and testing
+        grade: 4.0
   - degree: Ontario Secondary School Diploma (and AP credits)
     school: Royal St. George's College
     location: Toronto, ON
@@ -31,6 +34,14 @@ education:
           such as building a breadboard computer, programming PWM fan control with USART 
           readout in assembly, and more
 work-experience:
+  - job-title: Risk and Control Automation Analyst
+    company: Royal Bank of Canada
+    location: Toronto, ON
+    start-date: Jan. 2021
+    end-date: Present
+    blurb:
+      - Gained experience working with Jira, Confluence, and ServiceNow
+      - Very recently started working in this position
   - job-title: Software Engineering Intern
     company: RT7 Inc.
     location: Toronto, ON
@@ -40,9 +51,9 @@ work-experience:
       - Contributing member of a development team in a work environment
       - Wrote documentation for existing Swift codebase
       - Rebuilt existing product from scratch with React Native, uniting Android and iOS codebases
-      - Learned JavaScript and development best practices in the process
+      # - Learned JavaScript and development best practices in the process
       - Practised attention to detail when generating new apps and publishing with accurate info to the App Store
-      # - Gained experience with GUI development through collaboration with design team
+      - Gained experience with GUI development through collaboration with design team
   - job-title: Summer Intern
     company: Achiga Inc. & Concierge Plus
     location: Toronto, ON
@@ -101,18 +112,20 @@ skills:
     - \LaTeX
     - Nginx
     - \*NIX Systems (Debian, FreeBSD, OS X)
-    - MongoDB
-    - VSCode
-    - Xcode
+    - Quartus II
+    # - MongoDB
+    # - VSCode
+    # - Xcode
     - Atmel Studio 7
-    - QuickBooks, QuickBooks Online
+    # - QuickBooks, QuickBooks Online
     # - MS Office
     # - Google Analytics
   programming-experience:
     - Java
     - Python
-    - C
-    - C++ (Arduino)
+    - C & C++
+    - Verilog
+    # - C++ (Arduino)
     - AVR Assembly
     - JavaScript
     - ReactJS & React Native
