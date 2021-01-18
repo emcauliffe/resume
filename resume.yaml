@@ -3,7 +3,7 @@ header:
   name: Ethan McAuliffe
   about: 3rd year Computer and Management Engineering student
   email: ethan@emcauliffe.ca
-  mobile-number: (416) 559-5145
+  mobile-number: (416)559-5145
   website: https://www.emcauliffe.ca
   github: https://github.com/emcauliffe
   linkedin: https://www.linkedin.com/in/ethan-mcauliffe/
@@ -20,7 +20,7 @@ education:
         blurb: Acquired an in-depth understanding of Python, C, and Java through labwork and testing
         grade: 4.0 & 3.8 respectively
       - course-name: CompEng 2DI4
-        blurb: Acquired an in-depth understanding of logic design and Verilog through labwork and testing
+        blurb: Developed knowledge on logic design and Verilog 
         grade: 4.0
   - degree: Ontario Secondary School Diploma (and AP credits)
     school: Royal St. George's College
