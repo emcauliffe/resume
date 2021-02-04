@@ -34,4 +34,4 @@ jobs:
         git commit -m "Update resume.pdf for commit $LAST_COMMIT"
         git push
       env:
-        LAST_COMMIT: git ls-remote https://github.com/emcauliffe/resume.git HEAD | cut -c1-7
+        LAST_COMMIT: $(git ls-remote https://github.com/emcauliffe/resume.git HEAD | cut -c1-7)
