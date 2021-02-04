@@ -28,10 +28,9 @@ jobs:
       run: pandoc resume.yaml -o resume.pdf --pdf-engine=pdflatex --template=resume-template.tex
     - name: commit resume
       run: |
+        echo ::set-env name=LAST_COMMIT::$(git ls-remote https://github.com/emcauliffe/resume.git HEAD | cut -c1-7)
         git config user.name emcauliffe
         git config user.email 14607273+emcauliffe@users.noreply.github.com
         git add .
         git commit -m "Update resume.pdf for commit $LAST_COMMIT"
         git push
-      env:
-        LAST_COMMIT: $(git ls-remote https://github.com/emcauliffe/resume.git HEAD | cut -c1-7)
