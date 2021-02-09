@@ -3,7 +3,7 @@ header:
   name: Ethan McAuliffe
   about: 3rd year Computer and Management Engineering student
   email: ethan@emcauliffe.ca
-  mobile-number: (416)559-5145
+  mobile-number: (416) 559-5145
   website: https://www.emcauliffe.ca
   github: https://github.com/emcauliffe
   linkedin: https://www.linkedin.com/in/ethan-mcauliffe/
@@ -17,11 +17,11 @@ education:
     average: Cumulative 3.8 GPA
     coursework:
       - course-name: CompEng 2SI4 & 2SH4
-        blurb: Acquired an in-depth understanding of Python, C, and Java through labwork and testing
+        blurb: Acquired an in-depth understanding of Python, C, and Java through lab work and testing
         grade: 4.0 & 3.8 respectively
       - course-name: CompEng 2DI4
         blurb: Developed knowledge on logic design and Verilog 
-        grade: 4.0
+        grade: '4.0'
   - degree: Ontario Secondary School Diploma (and AP credits)
     school: Royal St. George's College
     location: Toronto, ON
@@ -34,14 +34,24 @@ education:
           such as building a breadboard computer, programming PWM fan control with USART 
           readout in assembly, and more
 work-experience:
+  - job-title: Software Developer (part-time)
+    company: Sojoodi Consulting Co.
+    location: Toronto, ON
+    start-date: Feb. 2021
+    end-date: Present
+    blurb:
+      - Building experience working on a small, fast-paced development team
+      - Applying Python, JavaScript, and Docker skills in a collaborative software development environment
+      - Creating software to modernize workflows at manufacturing facilities
   - job-title: Risk and Control Automation Analyst
     company: Royal Bank of Canada
     location: Toronto, ON
     start-date: Jan. 2021
     end-date: Present
     blurb:
-      - Gained experience working with Jira, Confluence, and ServiceNow
-      - Very recently started working in this position
+      - Praised for improvements to team efficiency and organization by migrating task management  system from a written document to Jira
+      - Refining JavaScript abilities through development of automated control testing scripts
+      - Gaining experience working with Jira, Confluence, and ServiceNow
   - job-title: Software Engineering Intern
     company: RT7 Inc.
     location: Toronto, ON
@@ -53,89 +63,99 @@ work-experience:
       - Rebuilt existing product from scratch with React Native, uniting Android and iOS codebases
       # - Learned JavaScript and development best practices in the process
       - Practised attention to detail when generating new apps and publishing with accurate info to the App Store
-      - Gained experience with GUI development through collaboration with design team
+      # - Gained experience with GUI development through collaboration with design team
   - job-title: Summer Intern
     company: Achiga Inc. & Concierge Plus
     location: Toronto, ON
-    start-date: July 2018
+    start-date: Jul. 2018
     end-date: Aug. 2018
     blurb:
       - Reduced accounts receivable over 90 days by 80+% through effective communications with past due customers
       - Extensive experience identifying and eliminating anomalies with money records/data
       - Developed professional interpersonal skills through daily interaction with customers
-personal-projects:
-  - title: Bottles Against COVID
-    blurb: 
-      - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
-      - Ran a bottle drive every week and raised over $3000 for St. Joe's Hospital in Toronto
-  - title: DeltaHacks VI Hackathon - StoryTime
-    blurb:
-      - Worked in a team of 3 to build a React Native mobile application + REST API backend to generate short stories for users to read instead of scrolling through social media feeds
-  - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
-    blurb:
-      - Gained extensive knowledge in the working of computers on a binary programming level
 extracurriculars:
-  - title: Software Lead at McMaster Mars Rover
+  - title: Software Team Lead at McMaster Mars Rover
     location: McMaster University
-    start-date: July 2020
+    start-date: Jul. 2020
     end-date: Present
     blurb:
       - Coordinate and participate in the development of software for the McMaster mars rover with a team of bright and motivated individuals
-      - Work with ROS to create a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping, and more
+      - Work with ROS (Python & C++) to create a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping (SLAM), and more
   - title: SHAD Valley
     location: Lakehead University
-    start-date: July 2017
+    start-date: Jul. 2017
     blurb:
-      - Worked with other participants from across the country to develop a product and a business plan with the goal of reducing the energy footprint of individual Canadians
+      # - Worked with other participants from across the country to develop a product and a business plan with the goal of reducing the energy footprint of individual Canadians
       - Placed 1st regionally & qualified for national SHAD Cup competition
   - title: Ice Hockey
     start-date: 2006
     end-date: Present
     blurb:
       - Former member of rep level hockey, high school varsity teams
-      - Current member of McMaster intramural teams
+      # - Current member of McMaster intramural teams
       - Instrumental in my development of teamwork skills and ability to work in a fast-paced environment
+personal-projects:
+  - title: Bottles Against COVID (https://bottlesagainstcovid.org)
+    blurb: 
+      - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
+      - Ran a bottle drive every week and raised over $3000 for St. Joe's Hospital in Toronto
+  # - title: DeltaHacks VI Hackathon - StoryTime
+  #   blurb:
+  #     - Worked in a team of 3 to build a React Native mobile application + REST API backend to generate short stories for users to read instead of scrolling through social media feeds
+  - title: Seat Alert (https://seatalert.ca)
+    blurb:
+      - Built a website where students can sign up to receive email and text alerts when a seat becomes available in a course they are interested in
+      - Frontend in React with a FastAPI backend and a custom Python package to query public university databases
+  - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
+    blurb:
+      - Gained extensive knowledge in the working of computers on a binary programming level
 volunteer-experience: 
   - job-title: Technical Assistant (TA)
     company: Royal St. George's College
     start-date: Sept. 2017
-    end-date: June 2018
+    end-date: Jun. 2018
     blurb: 
       - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
-      - Assumed a position of responsibility requiring maintenance and supervision of school workspace
+      # - Assumed a position of responsibility requiring maintenance and supervision of school workspace
 skills:
-  software:
-    - Git
-    - Flask & FastAPI
-    - EAGLE PCB design
-    - Autodesk Inventor & Fusion 360
-    - \LaTeX
-    - Nginx
-    - \*NIX Systems (Debian, FreeBSD, OS X)
-    - Quartus II
-    # - MongoDB
-    # - VSCode
-    # - Xcode
-    - Atmel Studio 7
-    # - QuickBooks, QuickBooks Online
-    # - MS Office
-    # - Google Analytics
+  # software:
+  #   - Git
+  #   - Flask & FastAPI
+  #   - EAGLE PCB design
+  #   - Autodesk Inventor & Fusion 360
+  #   - \LaTeX
+  #   - Nginx
+  #   - \*NIX Systems (Debian, FreeBSD, MacOS)
+  #   - Quartus II
+  #   - Jira, Confluence, Trello
+  #   # - MongoDB
+  #   # - VSCode
+  #   # - Xcode
+  #   - Atmel Studio 7
+  #   # - QuickBooks, QuickBooks Online
+  #   # - MS Office
+  #   # - Google Analytics
   programming-experience:
     - Java
+    - Git
     - Python
     - C & C++
+    - Docker
     - Verilog
     # - C++ (Arduino)
     - AVR Assembly
-    - JavaScript
-    - ReactJS & React Native
-    - Swift
+    - JavaScript (& ReactJS)
+    # - ReactJS & React Native
+    # - Swift
     - MATLAB
-    - Bash (zsh)
-    - I\textsuperscript{2}C
-    - SPI
-    - USART
-  communication:
-    - English
-    - French (DELF B1 Certified)
+    - Bash (+zsh)
+    - I\textsuperscript{2}C, SPI, U(S)ART
+    - EAGLE PCB design
+    # - Autodesk Inventor & Fusion 360
+    - \*NIX Systems
+    - Quartus II
+    - Jira, Confluence, Trello
+  # communication:
+  #   - English
+  #   - French (DELF B1 Certified)
 ...

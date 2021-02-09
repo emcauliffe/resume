@@ -114,6 +114,23 @@ $for(work-experience)$
 \end{description}
 $endfor$
 % 
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Extracurriculars}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(extracurriculars)$
+\begin{description}[leftmargin=0cm]
+\item
+	% activity, start date, end date, location
+	\ressubheading{$extracurriculars.title$}{$extracurriculars.start-date$ $if(extracurriculars.end-date)$- $extracurriculars.end-date$$endif$}{$extracurriculars.location$}{}
+	% some points about the job
+	\begin{itemize}
+	$for(extracurriculars.blurb)$
+		\resitem{$extracurriculars.blurb$}
+	$endfor$
+	\end{itemize}
+\end{description}
+$endfor$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Personal Projects}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,24 +148,7 @@ $for(personal-projects)$
 \end{description}
 $endfor$
 % 
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Extracurriculars}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-$for(extracurriculars)$
-\begin{description}[leftmargin=0cm]
-\item
-	% activity, start date, end date, location
-	\ressubheading{$extracurriculars.title$}{$extracurriculars.start-date$ $if(extracurriculars.end-date)$- $extracurriculars.end-date$$endif$}{$extracurriculars.location$}{}
-	% some points about the job
-	\begin{itemize}
-	$for(extracurriculars.blurb)$
-		\resitem{$extracurriculars.blurb$}
-	$endfor$
-	\end{itemize}
-
-\end{description}
-$endfor$
+% \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Volunteering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -166,33 +166,33 @@ $for(volunteer-experience)$
 \end{description}
 $endfor$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Skills}\vspace{-20pt}
+\resheading{Selected Skills}\vspace{-20pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{multicols*}{3}
-\ressubheading{Software}{}{}{}
-	\begin{itemize}
-		$for(skills.software)$
-			\item{$skills.software$}\vspace{-7pt}
-		$endfor$
-	\end{itemize}
-\vfill\null
-\columnbreak
+% \ressubheading{Software}{}{}{}
+% 	\begin{itemize}
+% 		$for(skills.software)$
+% 			\item{$skills.software$}\vspace{-7pt}
+% 		$endfor$
+% 	\end{itemize}
+% \vfill\null
+% \columnbreak
 %
-\ressubheading{Programming Experience}{}{}{}
+% \ressubheading{Programming Experience}{}{}{}
 	\begin{itemize}
 		$for(skills.programming-experience)$
 			\item{$skills.programming-experience$}\vspace{-7pt}
 		$endfor$
 	\end{itemize}
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 %
-\ressubheading{Communication}{}{}{}
-	\begin{itemize}
-		$for(skills.communication)$
-			\item{$skills.communication$}\vspace{-7pt}
-		$endfor$
-	\end{itemize}
+% \ressubheading{Communication}{}{}{}
+% 	\begin{itemize}
+% 		$for(skills.communication)$
+% 			\item{$skills.communication$}\vspace{-7pt}
+% 		$endfor$
+% 	\end{itemize}
 \end{multicols*}
 % 
 \end{document}
