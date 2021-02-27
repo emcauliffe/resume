@@ -29,7 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        fetch-depth: 0
+        with:
+          fetch-depth: 0
       - name: Get original resume updating commit hash
         run: echo "LAST_COMMIT=$(git rev-parse --short HEAD^)" >> $GITHUB_ENV
       - name: Copy resume.pdf to gh-pages
