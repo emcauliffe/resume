@@ -16,13 +16,13 @@ jobs:
     - name: make resume 
       run: pandoc resume.yaml -o resume.pdf --pdf-engine=pdflatex --template=resume-template.tex
     - name: get last commit hash code
-      run: echo "LAST_COMMIT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+      run: echo "ORIGIN_COMMIT_HASH=$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
     - name: commit resume
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "Update resume.pdf for commit ${{ env.LAST_COMMIT }}"
+        git commit -m "Update resume.pdf for commit ${{ env.ORIGIN_COMMIT_HASH }}"
         git push
   deploy:
     needs: build
@@ -32,12 +32,12 @@ jobs:
         with:
           fetch-depth: 0
       - name: Get original resume updating commit hash
-        run: echo "LAST_COMMIT=$(git rev-parse --short HEAD^)" >> $GITHUB_ENV
+        run: echo "ORIGIN_COMMIT_HASH=$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
       - name: Copy resume.pdf to gh-pages
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git checkout gh-pages
-          git checkout master resume.pdf
-          git commit -m "Update resume.pdf for commit ${{ env.LAST_COMMIT }}"
+          git checkout master -- resume.pdf
+          git commit -m "Update resume.pdf for commit ${{ env.ORIGIN_COMMIT_HASH }}"
           git push
