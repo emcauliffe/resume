@@ -1,2 +1,2 @@
 # Resume
-[Link to resume.pdf](https://github.com/emcauliffe/resume/blob/master/resume.pdf)
+[Link to resume.pdf](https://emcauliffe.github.io/resume/resume.pdf)
