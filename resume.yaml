@@ -34,15 +34,15 @@ education:
           such as building a breadboard computer, programming PWM fan control with USART 
           readout in assembly, and more
 work-experience:
-  - job-title: Software Developer (part-time)
-    company: Sojoodi Consulting Co.
-    location: Toronto, ON
-    start-date: Feb. 2021
-    end-date: Present
-    blurb:
-      - Building experience working on a small, fast-paced development team
-      - Applying Python, JavaScript, and Docker skills in a collaborative software development environment
-      - Creating software to modernize workflows at manufacturing facilities
+  # - job-title: Software Developer (part-time)
+  #   company: Sojoodi Consulting Co.
+  #   location: Toronto, ON
+  #   start-date: Feb. 2021
+  #   end-date: Present
+  #   blurb:
+  #     - Building experience working on a small, fast-paced development team
+  #     - Applying Python, JavaScript, and Docker skills in a collaborative software development environment
+  #     - Creating software to modernize workflows at manufacturing facilities
   - job-title: Risk and Control Automation Analyst
     company: Royal Bank of Canada
     location: Toronto, ON
@@ -85,7 +85,7 @@ extracurriculars:
     location: Lakehead University
     start-date: Jul. 2017
     blurb:
-      # - Worked with other participants from across the country to develop a product and a business plan with the goal of reducing the energy footprint of individual Canadians
+      - Worked with other participants from across the country to develop a product and a business plan with the goal of reducing the energy footprint of individual Canadians
       - Placed 1st regionally & qualified for national SHAD Cup competition
   - title: Ice Hockey
     start-date: 2006
@@ -116,7 +116,7 @@ volunteer-experience:
     end-date: Jun. 2018
     blurb: 
       - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
-      # - Assumed a position of responsibility requiring maintenance and supervision of school workspace
+      - Assumed a position of responsibility requiring maintenance and supervision of school workspace
 skills:
   # software:
   #   - Git
@@ -141,21 +141,23 @@ skills:
     - Python
     - C & C++
     - Docker
+    - Flask & FastAPI
+    - Robot Operating System (ROS)
     - Verilog
     # - C++ (Arduino)
     - AVR Assembly
-    - JavaScript (& ReactJS)
-    # - ReactJS & React Native
-    # - Swift
+    - JavaScript
+    - ReactJS & React Native
+    - Swift
     - MATLAB
     - Bash (+zsh)
     - I\textsuperscript{2}C, SPI, U(S)ART
     - EAGLE PCB design
-    # - Autodesk Inventor & Fusion 360
+    - Autodesk Inventor & Fusion 360
     - \*NIX Systems
     - Quartus II
     - Jira, Confluence, Trello
-  # communication:
-  #   - English
-  #   - French (DELF B1 Certified)
+  communication:
+    - English
+    - French (DELF B1 Certified)
 ...

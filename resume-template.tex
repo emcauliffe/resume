@@ -114,6 +114,22 @@ $for(work-experience)$
 \end{description}
 $endfor$
 % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Volunteering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(volunteer-experience)$
+\begin{description}[leftmargin=0cm]
+\item
+	% job title, company, location, and tenure
+	\ressubheading{$volunteer-experience.job-title$}{$volunteer-experience.location$}{$volunteer-experience.company$}{$volunteer-experience.start-date$ - $volunteer-experience.end-date$}
+	% some points about the job
+	\begin{itemize}
+	$for(volunteer-experience.blurb)$
+		\resitem{$volunteer-experience.blurb$}
+	$endfor$
+	\end{itemize}\vspace{-10pt}
+\end{description}
+$endfor$
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Extracurriculars}
@@ -150,22 +166,6 @@ $endfor$
 % 
 % \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Volunteering}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-$for(volunteer-experience)$
-\begin{description}[leftmargin=0cm]
-\item
-	% job title, company, location, and tenure
-	\ressubheading{$volunteer-experience.job-title$}{$volunteer-experience.location$}{$volunteer-experience.company$}{$volunteer-experience.start-date$ - $volunteer-experience.end-date$}
-	% some points about the job
-	\begin{itemize}
-	$for(volunteer-experience.blurb)$
-		\resitem{$volunteer-experience.blurb$}
-	$endfor$
-	\end{itemize}\vspace{-10pt}
-\end{description}
-$endfor$
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Selected Skills}\vspace{-20pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{multicols*}{4}
@@ -184,15 +184,15 @@ $endfor$
 			\item{$skills.programming-experience$}\vspace{-7pt}
 		$endfor$
 	\end{itemize}
-% \vfill\null
-% \columnbreak
-%
-% \ressubheading{Communication}{}{}{}
-% 	\begin{itemize}
-% 		$for(skills.communication)$
-% 			\item{$skills.communication$}\vspace{-7pt}
-% 		$endfor$
-% 	\end{itemize}
+\vfill\null
+\columnbreak
+
+\ressubheading{Communication}{}{}{}
+	\begin{itemize}
+		$for(skills.communication)$
+			\item{$skills.communication$}\vspace{-7pt}
+		$endfor$
+	\end{itemize}
 \end{multicols*}
 % 
 \end{document}
