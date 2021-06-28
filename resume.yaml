@@ -95,6 +95,11 @@ extracurriculars:
   #     # - Current member of McMaster intramural teams
   #     - Instrumental in my development of teamwork skills and ability to work in a fast-paced environment
 personal-projects:
+  - title: Seat Alert (https://seatalert.ca)
+    blurb:
+      - Built a website where students can sign up to receive email and text alerts when a seat becomes available in a course they are interested in
+      - Frontend in React with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
+      - Over 3k active users for fall & winter semesters in the first week of operation
   - title: Bottles Against COVID (https://bottlesagainstcovid.org)
     blurb: 
       - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
@@ -102,11 +107,6 @@ personal-projects:
   # - title: DeltaHacks VI Hackathon - StoryTime
   #   blurb:
   #     - Worked in a team of 3 to build a React Native mobile application + REST API backend to generate short stories for users to read instead of scrolling through social media feeds
-  - title: Seat Alert (https://seatalert.ca)
-    blurb:
-      - Built a website where students can sign up to receive email and text alerts when a seat becomes available in a course they are interested in
-      - Frontend in React with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
-      - Over 300 beta testers and expecting approx. 5k active users for fall & winter semesters
   - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
     blurb:
       - Gained extensive knowledge in the working of computers and computer architecture
