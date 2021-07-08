@@ -1,4 +1,4 @@
-name: Build resume.pdf and deploy to gh-pages
+name: Build ethan-mcauliffe-resume.pdf and deploy to gh-pages
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
     - name: install pandoc and latex
       run: sudo apt-get install pandoc texlive-latex-extra -y
     - name: make resume 
-      run: pandoc resume.yaml -o resume.pdf --pdf-engine=pdflatex --template=resume-template.tex
+      run: pandoc resume.yaml -o ethan-mcauliffe-resume.pdf --pdf-engine=pdflatex --template=resume-template.tex
     - name: get last commit hash code
       run: echo "ORIGIN_COMMIT_HASH=$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
     - name: commit resume
@@ -22,7 +22,7 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "Update resume.pdf for commit ${{ env.ORIGIN_COMMIT_HASH }}"
+        git commit -m "Update ethan-mcauliffe-resume.pdf for commit ${{ env.ORIGIN_COMMIT_HASH }}"
         git push
   deploy:
     needs: build
@@ -33,13 +33,13 @@ jobs:
           fetch-depth: 0
       - name: Get original resume updating commit hash
         run: echo "ORIGIN_COMMIT_HASH=$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
-      - name: Copy resume.pdf to gh-pages
+      - name: Copy ethan-mcauliffe-resume.pdf to gh-pages
         run: |
           git fetch
           git pull
           git config user.name github-actions
           git config user.email github-actions@github.com
           git checkout gh-pages
-          git checkout master -- resume.pdf
-          git commit -m "Update resume.pdf for commit ${{ env.ORIGIN_COMMIT_HASH }}"
+          git checkout master -- ethan-mcauliffe-resume.pdf
+          git commit -m "Update ethan-mcauliffe-resume.pdf for commit ${{ env.ORIGIN_COMMIT_HASH }}"
           git push
