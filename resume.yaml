@@ -40,18 +40,20 @@ work-experience:
     start-date: Feb. 2021
     end-date: Present
     blurb:
-      - Building experience working on a small, fast-paced development team
+      - Building experience working with industry tools/libraries (FastAPI, React, SQLAlchemy) on a small, fast-paced development team
+      - Integrating customer feedback to develop a highly praised full-stack application to modernize manufacturing, shipping, and installation workflows
       - Applying Python, JavaScript, Docker, SQL skills in a collaborative software development environment
-      - Creating full-stack application to modernize production workflows at manufacturing facilities
   - job-title: Risk and Control Automation Analyst
     company: Royal Bank of Canada
     location: Toronto, ON
     start-date: Jan. 2021
     end-date: Present
     blurb:
-      - Praised for improvements to team efficiency and organization by migrating task management  system from a written document to Jira
-      - Refining JavaScript abilities through development of automated control testing scripts
-      - Gaining experience working with Jira, Confluence, and ServiceNow
+      - Praised for ability to make impactful contributions towards the team's goals by developing robust, yet easily maintainable tests   
+      - Praised for improvements to team efficiency and organization by migrating task management system and authoring clear documentation
+      - Developed extensive experience on working and developing software in a corporate environment
+      # - Refining JavaScript abilities through development of automated control testing scripts
+      # - Gaining experience working with Jira, Confluence, and ServiceNow
   - job-title: Software Engineering Intern
     company: RT7 Inc.
     location: Toronto, ON
@@ -79,14 +81,14 @@ extracurriculars:
     start-date: Jul. 2020
     end-date: Present
     blurb:
-      - Coordinate and participate in the development of software for the McMaster mars rover with a team of bright and motivated individuals
-      - Work with ROS (Python & C++) to create a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping (SLAM), and more
+      - Manage, coordinate, and participate in the development of software (embedded and non embedded) for the McMaster mars rover with a team of bright and motivated individuals
+      - Work with ROS (Python & C++) to create and simulate a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping (SLAM), differential drive control, and more
+      - Applying skills learned in engineering courses (technical) and in commerce courses (recruiting and team building)
   - title: SHAD Valley
     location: Lakehead University
     start-date: Jul. 2017
     blurb:
-      - Worked with other participants from across the country to develop a product and a business plan with the goal of reducing the energy footprint of individual Canadians
-      - Placed 1st regionally & qualified for national SHAD Cup competition
+      - Worked with other SHAD participants to develop a product and a business plan with the goal of reducing the Canadians' energy footprint; placed 1st & qualified for national competition
   # - title: Ice Hockey
   #   start-date: 2006
   #   end-date: Present
@@ -98,8 +100,8 @@ personal-projects:
   - title: Seat Alert (https://seatalert.ca)
     blurb:
       - Built a website where students can sign up to receive email and text alerts when a seat becomes available in a course they are interested in
-      - Frontend in React with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
-      - Over 3k active users for fall & winter semesters in the first week of operation
+      - Frontend in React/Preact (+from-scratch webpack configuration) with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
+      - Over 6.5k registered users and over 40k alerts delivered in the first month of operation
   - title: Bottles Against COVID (https://bottlesagainstcovid.org)
     blurb: 
       - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
@@ -117,7 +119,7 @@ volunteer-experience:
     end-date: Jun. 2018
     blurb: 
       - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
-      - Assumed a position of responsibility requiring maintenance and supervision of school workspace
+      # - Assumed a position of responsibility requiring maintenance and supervision of school workspace
 skills:
   # software:
   #   - Git
