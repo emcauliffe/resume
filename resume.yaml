@@ -13,7 +13,7 @@ education:
     location: Hamilton, ON
     start-date: Sept. 2018
     end-date: Present
-    info: Completed 2.5 years
+    # info: Completed 2.5 years
     average: Cumulative 3.8 GPA
     coursework:
       - course-name: CompEng 2SI4 & 2SH4
@@ -27,27 +27,21 @@ education:
     location: Toronto, ON
     start-date: Sept. 2014
     end-date: June 2018
-    coursework:
-      - course-name: TEI4M
-        blurb: > 
-          Learned the fundamentals of computer engineering through a variety of projects 
-          such as building a breadboard computer, programming PWM fan control with USART 
-          readout in assembly, and more
 work-experience:
   - job-title: Software Developer (part-time)
     company: Integral Co.
     location: Toronto, ON
     start-date: Feb. 2021
-    end-date: Present
+    end-date: Dec. 2021
     blurb:
       - Building experience working with industry tools/libraries (FastAPI, React, SQLAlchemy) on a small, fast-paced development team
       - Integrating customer feedback to develop a highly praised full-stack application to modernize manufacturing, shipping, and installation workflows
-      - Applying Python, JavaScript, Docker, SQL skills in a collaborative software development environment
+      - Applying Python, JavaScript, Docker, SQL skills in a collaborative software development environment to quickly and efficiently deliver software products to customers
   - job-title: Risk and Control Automation Analyst
     company: Royal Bank of Canada
     location: Toronto, ON
     start-date: Jan. 2021
-    end-date: Present
+    end-date: Aug. 2021
     blurb:
       - Commended for ability to make impactful contributions towards the team's goals by developing robust, yet easily maintainable tests   
       - Praised for improvements to team efficiency and organization by migrating task management system and authoring clear documentation
@@ -101,7 +95,7 @@ personal-projects:
     blurb:
       - Built a website where students can sign up to receive email and text alerts when a seat becomes available in a course they are interested in
       - Frontend in React/Preact (+from-scratch webpack configuration) with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
-      - Over 10k registered users and over 80k alerts delivered in the first semester of operation
+      - Over 15k registered users and over 100k alerts delivered in the first year of operation
   - title: Bottles Against COVID (https://bottlesagainstcovid.org)
     blurb: 
       - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
