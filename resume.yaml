@@ -20,14 +20,21 @@ education:
         blurb: Acquired an in-depth understanding of Python, C, and Java through lab work and testing
         grade: 4.0 & 3.8 respectively
       - course-name: CompEng 2DI4
-        blurb: Developed knowledge on logic design and Verilog 
-        grade: '4.0'
+        blurb: Developed knowledge on logic design and Verilog
+        grade: "4.0"
   - degree: Ontario Secondary School Diploma (and AP credits)
     school: Royal St. George's College
     location: Toronto, ON
     start-date: Sept. 2014
     end-date: June 2018
 work-experience:
+  - job-title: Software Engineer Intern
+    company: Veeva Systems
+    start-date: May 2022
+    end-date: Present
+    blurb:
+      - Writing tests in Java using Selenium and Cucumber to ensure reliable operation of key product
+      - Refactoring codebase to implement "single source of truth" philosophy which reduces future development time
   - job-title: Software Developer (part-time)
     company: Integral Co.
     location: Toronto, ON
@@ -43,7 +50,7 @@ work-experience:
     start-date: Jan. 2021
     end-date: Aug. 2021
     blurb:
-      - Commended for ability to make impactful contributions towards the team's goals by developing robust, yet easily maintainable tests   
+      - Commended for ability to make impactful contributions towards the team's goals by developing robust, yet easily maintainable tests
       - Praised for improvements to team efficiency and organization by migrating task management system and authoring clear documentation
       - Developed extensive experience on working and developing software in a corporate environment
       # - Refining JavaScript abilities through development of automated control testing scripts
@@ -97,7 +104,7 @@ personal-projects:
       - Frontend in React/Preact (+from-scratch webpack configuration) with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
       - Over 15k registered users and over 100k alerts delivered in the first year of operation
   - title: Bottles Against COVID (https://bottlesagainstcovid.org)
-    blurb: 
+    blurb:
       - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
       - Ran a bottle drive every week and raised over $3000 for St. Joe's Hospital in Toronto
   # - title: DeltaHacks VI Hackathon - StoryTime
@@ -106,12 +113,12 @@ personal-projects:
   - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
     blurb:
       - Gained extensive knowledge in the working of computers and computer architecture
-volunteer-experience: 
+volunteer-experience:
   - job-title: Technical Assistant (TA)
     company: Royal St. George's College
     start-date: Sept. 2017
     end-date: Jun. 2018
-    blurb: 
+    blurb:
       - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
       # - Assumed a position of responsibility requiring maintenance and supervision of school workspace
 skills:
@@ -157,4 +164,3 @@ skills:
   communication:
     - English
     - French (DELF B1 Certified)
-...
