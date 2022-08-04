@@ -17,7 +17,7 @@ education:
     average: Cumulative 3.8 GPA
     coursework:
       - course-name: CompEng 2SI4 & 2SH4
-        blurb: Acquired an in-depth understanding of Python, C, and Java through lab work and testing
+        blurb: Acquired an in-depth understanding of Python, C, and Java with focus on data structures and algorithms
         grade: 4.0 & 3.8 respectively
       - course-name: CompEng 2DI4
         blurb: Developed knowledge on logic design and Verilog
@@ -33,8 +33,9 @@ work-experience:
     start-date: May 2022
     end-date: Present
     blurb:
-      - Writing tests in Java using Selenium and Cucumber to ensure reliable operation of key product
+      - Writing automated tests in Java using Selenium web driver and Cucumber to ensure reliable operation of key products
       - Refactoring codebase to implement "single source of truth" philosophy which reduces future development time
+      - Working with industry tools like Jenkins, Vagrant, and Serenity to monitor results of test runs in an easily consumable manner
   - job-title: Software Developer (part-time)
     company: Integral Co.
     location: Toronto, ON
@@ -52,7 +53,7 @@ work-experience:
     blurb:
       - Commended for ability to make impactful contributions towards the team's goals by developing robust, yet easily maintainable tests
       - Praised for improvements to team efficiency and organization by migrating task management system and authoring clear documentation
-      - Developed extensive experience on working and developing software in a corporate environment
+      # - Developed extensive experience on working and developing software in a corporate environment
       # - Refining JavaScript abilities through development of automated control testing scripts
       # - Gaining experience working with Jira, Confluence, and ServiceNow
   - job-title: Software Engineering Intern
@@ -61,7 +62,7 @@ work-experience:
     start-date: May 2019
     end-date: Aug. 2019
     blurb:
-      - Contributing member of a development team in a work environment
+      # - Contributing member of a development team in a work environment
       - Wrote documentation for existing Swift codebase
       - Rebuilt existing product from scratch with React Native, uniting Android and iOS codebases
       # - Learned JavaScript and development best practices in the process
@@ -83,13 +84,13 @@ extracurriculars:
     end-date: Present
     blurb:
       - Manage, coordinate, and participate in the development of software (embedded and non embedded) for the McMaster mars rover with a team of bright and motivated individuals
-      - Work with ROS (Python & C++) to create and simulate a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping (SLAM), differential drive control, and more
-      - Applying skills learned in engineering courses (technical) and in commerce courses (recruiting and team building)
+      - Work with ROS (Python & C++) to create and simulate a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping (SLAM), PID drive control, and more
+      - Applying skills and tools learned in engineering courses (interrupts, I2C, UART, SPI, OOP, Linux, code documentation practices) and in commerce courses (recruiting, team building, project management)
   - title: SHAD Valley
     location: Lakehead University
     start-date: Jul. 2017
     blurb:
-      - Worked with other SHAD participants to develop a product and a business plan with the goal of reducing the Canadians' energy footprint; placed 1st & qualified for national competition
+      - Worked with other SHAD participants to develop a product and a business plan; placed 1st & qualified for national competition
   # - title: Ice Hockey
   #   start-date: 2006
   #   end-date: Present
@@ -102,7 +103,8 @@ personal-projects:
     blurb:
       - Built a website where students can sign up to receive email and text alerts when a seat becomes available in a course they are interested in
       - Frontend in React/Preact (+from-scratch webpack configuration) with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
-      - Over 15k registered users and over 100k alerts delivered in the first year of operation
+      # - Recommended by McMaster faculty, admin, and students
+      - Used by over 20k students across five universities
   - title: Bottles Against COVID (https://emcauliffe.github.io/Bottle-Drive-Website/)
     blurb:
       - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
@@ -139,29 +141,33 @@ skills:
   #   # - QuickBooks, QuickBooks Online
   #   # - MS Office
   #   # - Google Analytics
+    # - MATLAB
+    # - AVR Assembly
+    # - Robot Operating System
+    # - Swift
+    # - Autodesk Inventor & Fusion 360
+    # - Jira, Confluence, Trello
   programming-experience:
-    - Java
     - Python
-    - C
+    - Java
+    - C & C++
     - JavaScript
+    - React
+    - React Native
     - Verilog
     - Bash (+zsh)
-    - MATLAB
-    - AVR Assembly
+    - ROS
+    - Flask
+    - FastAPI
     - Git
-    - Robot Operating System
-    - Flask & FastAPI
     # - C++ (Arduino)
-    - ReactJS & React Native
     - Docker
-    # - Swift
-    - I\textsuperscript{2}C, SPI, U(S)ART
     - EAGLE PCB
-    # - Autodesk Inventor & Fusion 360
-    - Quartus II
-    # - Jira, Confluence, Trello
+    - Quartus
+    - Keil
     - \*NIX Systems
-  communication:
-    - English
-    - French (DELF B1 Certified)
+    - I\textsuperscript{2}C, SPI, U(S)ART
+  # communication:
+  #   - English
+  #   - French (DELF B1 Certified)
 ...
