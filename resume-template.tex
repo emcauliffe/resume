@@ -80,7 +80,7 @@ $for(education)$
 \begin{description}[leftmargin=0cm]
 \item
 	% School name, degree, and time duration
-	\ressubheading{$education.school$}{$education.location$}{$education.degree$}{$education.start-date$ - $education.end-date$}
+	\ressubheading{$education.school$}{$education.location$}{$education.degree$$if(education.average)$($education.average$)$endif$}{$education.start-date$ - $education.end-date$}
 	$if(education.info)$
 	\begin{itemize}
 		\resitem{$education.info$ $if(education.average)$($education.average$)$endif$}

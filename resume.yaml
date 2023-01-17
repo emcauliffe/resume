@@ -1,7 +1,7 @@
 ---
 header:
   name: Ethan McAuliffe
-  about: 3rd year Computer and Management Engineering student
+  about: 4th year Computer and Management Engineering student
   email: ethan@emcauliffe.ca
   mobile-number: (416) 559-5145
   website: https://www.emcauliffe.ca
@@ -14,14 +14,14 @@ education:
     start-date: Sept. 2018
     end-date: Present
     # info: Completed 2.5 years
-    average: Cumulative 3.8 GPA
+    average: 3.8 GPA
     coursework:
       - course-name: CompEng 2SI4 & 2SH4
         blurb: Acquired an in-depth understanding of Python, C, and Java with focus on data structures and algorithms
-        grade: 4.0 & 3.8 respectively
-      - course-name: CompEng 2DI4
-        blurb: Developed knowledge on logic design and Verilog
-        grade: "4.0"
+        # grade: 4.0 & 3.8 respectively
+      - course-name: CompEng 3DQ5
+        blurb: Developed modified JPEG decompression program in System Verlog
+        # grade: "4.0"
   - degree: Ontario Secondary School Diploma (and AP credits)
     school: Royal St. George's College
     location: Toronto, ON
@@ -31,20 +31,21 @@ work-experience:
   - job-title: Software Engineer Intern
     company: Veeva Systems
     start-date: May 2022
-    end-date: Present
+    end-date: Aug. 2022
     blurb:
-      - Writing automated tests in Java using Selenium web driver and Cucumber to ensure reliable operation of key products
-      - Refactoring codebase to implement "single source of truth" philosophy which reduces future development time
-      - Working with industry tools like Jenkins, Vagrant, and Serenity to monitor results of test runs in an easily consumable manner
-  - job-title: Software Developer (part-time)
+      - Wrote automated tests in Java using Selenium web driver and Cucumber which caught issues with key products before pushing to production
+      - Refactored codebase to implement "single source of truth" philosophy to reduce future development hours and make debugging easier
+      - Worked with industry tools like Jenkins, Vagrant, and Serenity to monitor results of test runs and produce easy-to-consume reports for management
+  - job-title: Software Developer
     company: Integral Co.
     location: Toronto, ON
     start-date: Feb. 2021
     end-date: Dec. 2021
     blurb:
-      - Building experience working with industry tools/libraries (FastAPI, React, SQLAlchemy) on a small, fast-paced development team
-      - Integrating customer feedback to develop a highly praised full-stack application to modernize manufacturing, shipping, and installation workflows
-      - Applying Python, JavaScript, Docker, SQL skills in a collaborative software development environment to quickly and efficiently deliver software products to customers
+      - Developed scheduling products to save manufacturing customer hours of manual labour each day. These products are used as showcases in advertising material for Integral
+      - Quickly building experience working with industry tools/libraries (FastAPI, React, SQLAlchemy) while adhering to customer requirements and deadlines
+      # - Integrating customer feedback to develop a highly praised full-stack application to modernize manufacturing, shipping, and installation workflows
+      # - Applying Python, JavaScript, Docker, SQL skills in a collaborative software development environment to quickly and efficiently deliver software products to customers
   - job-title: Risk and Control Automation Analyst
     company: Royal Bank of Canada
     location: Toronto, ON
@@ -141,12 +142,12 @@ skills:
   #   # - QuickBooks, QuickBooks Online
   #   # - MS Office
   #   # - Google Analytics
-    # - MATLAB
-    # - AVR Assembly
-    # - Robot Operating System
-    # - Swift
-    # - Autodesk Inventor & Fusion 360
-    # - Jira, Confluence, Trello
+  # - MATLAB
+  # - AVR Assembly
+  # - Robot Operating System
+  # - Swift
+  # - Autodesk Inventor & Fusion 360
+  # - Jira, Confluence, Trello
   programming-experience:
     - Python
     - Java
