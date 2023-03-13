@@ -22,18 +22,41 @@ education:
       - course-name: CompEng 3DQ5
         blurb: Developed modified JPEG decompression program in System Verlog
         # grade: "4.0"
-  - degree: Ontario Secondary School Diploma (and AP credits)
-    school: Royal St. George's College
-    location: Toronto, ON
-    start-date: Sept. 2014
-    end-date: June 2018
+  # - degree: Ontario Secondary School Diploma (and AP credits)
+  #   school: Royal St. George's College
+  #   location: Toronto, ON
+  #   start-date: Sept. 2014
+  #   end-date: June 2018
+extracurriculars:
+  - title: Software Team Lead at McMaster Mars Rover
+    location: McMaster University
+    start-date: Jul. 2020
+    end-date: Present
+    blurb:
+      - Coordinate, participate in, and teach software development (embedded and non-embedded)
+      - Work with ROS (Python & C++) to create and simulate a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping (SLAM), PID drive control, and more
+      - Developed PID control module for drive motors, implemented computer vision object detection system, wrote drivers for arm and drill control over UART, published python package to send messages over LoRa with Jetson TX2 SPI interface
+      - Applying skills and tools learned in engineering courses (interrupts, I2C, UART, SPI, OOP, Linux, code documentation practices) and in commerce courses (recruiting, team building, project management)
+      - Developing and applying skills to rapidly deal with unexpected issues (including mechanical, electrical, and software problems)
+  # - title: SHAD Valley
+  #   location: Lakehead University
+  #   start-date: Jul. 2017
+  #   blurb:
+  #     - Worked with other SHAD participants to develop a product and a business plan; placed 1st & qualified for national competition
+  # - title: Ice Hockey
+  #   start-date: 2006
+  #   end-date: Present
+  #   blurb:
+  #     - Former member of rep level hockey, high school varsity teams
+  #     # - Current member of McMaster intramural teams
+  #     - Instrumental in my development of teamwork skills and ability to work in a fast-paced environment
 work-experience:
   - job-title: Software Engineer Intern
     company: Veeva Systems
     start-date: May 2022
     end-date: Aug. 2022
     blurb:
-      - Wrote automated tests in Java using Selenium web driver and Cucumber which caught issues with key products before pushing to production
+      - Wrote automated tests in Java using Selenium web driver and Cucumber which caught multiple issues with key products before entering to production
       - Refactored codebase to implement "single source of truth" philosophy to reduce future development hours and make debugging easier
       - Worked with industry tools like Jenkins, Vagrant, and Serenity to monitor results of test runs and produce easy-to-consume reports for management
   - job-title: Software Developer
@@ -42,7 +65,8 @@ work-experience:
     start-date: Feb. 2021
     end-date: Dec. 2021
     blurb:
-      - Developed scheduling products to save manufacturing customer hours of manual labour each day. These products are used as showcases in advertising material for Integral
+      - Developed showcase drag-and-drop calendar product from scratch which helped Integral acquire multiple new customers
+      - Developed scheduling products to save manufacturing customer 10+ hours of work each day, allowing customer to focus on expanding their business
       - Quickly building experience working with industry tools/libraries (FastAPI, React, SQLAlchemy) while adhering to customer requirements and deadlines
       # - Integrating customer feedback to develop a highly praised full-stack application to modernize manufacturing, shipping, and installation workflows
       # - Applying Python, JavaScript, Docker, SQL skills in a collaborative software development environment to quickly and efficiently deliver software products to customers
@@ -78,34 +102,13 @@ work-experience:
       - Reduced accounts receivable over 90 days by 80+% through effective communications with past due customers
       - Extensive experience identifying and eliminating anomalies with money records/data
       - Developed professional interpersonal skills through daily interaction with customers
-extracurriculars:
-  - title: Software Team Lead at McMaster Mars Rover
-    location: McMaster University
-    start-date: Jul. 2020
-    end-date: Present
-    blurb:
-      - Manage, coordinate, and participate in the development of software (embedded and non embedded) for the McMaster mars rover with a team of bright and motivated individuals
-      - Work with ROS (Python & C++) to create and simulate a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping (SLAM), PID drive control, and more
-      - Applying skills and tools learned in engineering courses (interrupts, I2C, UART, SPI, OOP, Linux, code documentation practices) and in commerce courses (recruiting, team building, project management)
-  - title: SHAD Valley
-    location: Lakehead University
-    start-date: Jul. 2017
-    blurb:
-      - Worked with other SHAD participants to develop a product and a business plan; placed 1st & qualified for national competition
-  # - title: Ice Hockey
-  #   start-date: 2006
-  #   end-date: Present
-  #   blurb:
-  #     - Former member of rep level hockey, high school varsity teams
-  #     # - Current member of McMaster intramural teams
-  #     - Instrumental in my development of teamwork skills and ability to work in a fast-paced environment
 personal-projects:
   - title: Seat Alert (https://seatalert.ca)
     blurb:
       - Built a website where students can sign up to receive email and text alerts when a seat becomes available in a course they are interested in
-      - Frontend in React/Preact (+from-scratch webpack configuration) with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
-      # - Recommended by McMaster faculty, admin, and students
-      - Used by over 20k students across five universities
+      - Frontend in React (+from-scratch webpack configuration) with a FastAPI backend and a custom Python package to query public university databases (utilizing async libraries)
+      - Recommended by McMaster faculty, admin, and students
+      - Used by over 20k students each year across five universities
   - title: Bottles Against COVID (https://emcauliffe.github.io/Bottle-Drive-Website/)
     blurb:
       - Built a full-stack website to facilitate contactless bottle drives during the COVID-19 pandemic
@@ -113,16 +116,16 @@ personal-projects:
   # - title: DeltaHacks VI Hackathon - StoryTime
   #   blurb:
   #     - Worked in a team of 3 to build a React Native mobile application + REST API backend to generate short stories for users to read instead of scrolling through social media feeds
-  - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
-    blurb:
-      - Gained extensive knowledge in the working of computers and computer architecture
+  # - title: 4-Bit Transistor-Transistor Logic (TTL) Computer
+  #   blurb:
+  #     - Gained extensive knowledge in the working of computers and computer architecture
 volunteer-experience:
   - job-title: Technical Assistant (TA)
     company: Royal St. George's College
     start-date: Sept. 2017
     end-date: Jun. 2018
     blurb:
-      - Selected for a leadership role teaching younger students basic electronic circuits, Arduino programs, and technical writing
+      - Selected for a leadership role teaching younger students basic electronic circuits, PCB design, Arduino programs, and technical writing
       # - Assumed a position of responsibility requiring maintenance and supervision of school workspace
 skills:
   # software:
@@ -154,20 +157,23 @@ skills:
     - C & C++
     - JavaScript
     - React
-    - React Native
+    # - React Native
     - Verilog
-    - Bash (+zsh)
-    - ROS
-    - Flask
-    - FastAPI
+    - System Verilog
+    - ARM Assembly
+    - Bash
+    - Linux
+    - ROS, ROS 2
+    # - Flask
+    # - FastAPI
     - Git
     # - C++ (Arduino)
     - Docker
-    - EAGLE PCB
+    # - EAGLE PCB
     - Quartus
     - Keil
-    - \*NIX Systems
     - I\textsuperscript{2}C, SPI, U(S)ART
+    - SQL
   # communication:
   #   - English
   #   - French (DELF B1 Certified)

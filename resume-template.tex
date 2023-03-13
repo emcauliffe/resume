@@ -98,23 +98,6 @@ $for(education)$
 $endfor$
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Work Experience}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-$for(work-experience)$
-\begin{description}[leftmargin=0cm]
-\item
-	% job title, company, location, and tenure
-	\ressubheading{$work-experience.job-title$}{$work-experience.location$}{$work-experience.company$}{$work-experience.start-date$ - $work-experience.end-date$}
-	% some points about the job
-	\begin{itemize}
-	$for(work-experience.blurb)$
-		\resitem{$work-experience.blurb$}
-	$endfor$
-	\end{itemize}\vspace{-10pt}
-\end{description}
-$endfor$
-\pagebreak 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Extracurriculars}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 $for(extracurriculars)$
@@ -131,6 +114,40 @@ $for(extracurriculars)$
 \end{description}
 $endfor$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(work-experience)$
+\begin{description}[leftmargin=0cm]
+\item
+	% job title, company, location, and tenure
+	\ressubheading{$work-experience.job-title$}{$work-experience.location$}{$work-experience.company$}{$work-experience.start-date$ - $work-experience.end-date$}
+	% some points about the job
+	\begin{itemize}
+	$for(work-experience.blurb)$
+		\resitem{$work-experience.blurb$}
+	$endfor$
+	\end{itemize}\vspace{-10pt}
+\end{description}
+$endfor$
+% \pagebreak 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Personal Projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$for(personal-projects)$
+\begin{description}[leftmargin=0cm]
+	\item
+	% job title, company, location, and tenure
+	\ressubheading{$personal-projects.title$}{}{}{}
+	% some points about the job
+	\begin{itemize}
+		$for(personal-projects.blurb)$
+		\resitem{$personal-projects.blurb$}
+		$endfor$
+	\end{itemize}\vspace{-10pt}
+\end{description}
+$endfor$
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Volunteering}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 $for(volunteer-experience)$
@@ -146,33 +163,16 @@ $for(volunteer-experience)$
 	\end{itemize}\vspace{-10pt}
 \end{description}
 $endfor$
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Personal Projects}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-$for(personal-projects)$
-\begin{description}[leftmargin=0cm]
-\item
-	% job title, company, location, and tenure
-	\ressubheading{$personal-projects.title$}{}{}{}
-	% some points about the job
-	\begin{itemize}
-	$for(personal-projects.blurb)$
-		\resitem{$personal-projects.blurb$}
-	$endfor$
-	\end{itemize}\vspace{-10pt}
-\end{description}
-$endfor$
-% 
 % \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Selected Skills}\vspace{-20pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{multicols*}{5}
-% \ressubheading{Software}{}{}{}
-% 	\begin{itemize}
-% 		$for(skills.software)$
-% 			\item{$skills.software$}\vspace{-7pt}
-% 		$endfor$
+	% \ressubheading{Software}{}{}{}
+	% 	\begin{itemize}
+		% 		$for(skills.software)$
+		% 			\item{$skills.software$}\vspace{-7pt}
+		% 		$endfor$
 % 	\end{itemize}
 % \vfill\null
 % \columnbreak
