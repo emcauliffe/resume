@@ -16,12 +16,14 @@ education:
     # info: Completed 2.5 years
     average: 3.8 GPA
     coursework:
-      - course-name: CompEng 2SI4 & 2SH4
-        blurb: Acquired an in-depth understanding of Python, C, and Java with focus on data structures and algorithms
+      # - course-name: CompEng 2SI4 & 2SH4
+      #   blurb: Data structures and algorithms in Python, C, and Java
         # grade: 4.0 & 3.8 respectively
       - course-name: CompEng 3DQ5
-        blurb: Developed modified JPEG decompression program in System Verlog
+        blurb: Created modified JPEG decompression program in System Verilog
         # grade: "4.0"
+      - course-name: CompEng 3DY4
+        blurb: Used C++ to process FM radio signal into mono, stereo, and RDS data. Implemented parallelization with mutex and conditional variables to run on embedded systems
   # - degree: Ontario Secondary School Diploma (and AP credits)
   #   school: Royal St. George's College
   #   location: Toronto, ON
@@ -33,11 +35,12 @@ extracurriculars:
     start-date: Jul. 2020
     end-date: Present
     blurb:
-      - Coordinate, participate in, and teach software development (embedded and non-embedded)
+      # - Coordinate, participate in, and teach software development (embedded and non-embedded)
       - Work with ROS (Python & C++) to create and simulate a rover capable of autonomously or manually completing tasks like GPS waypoint navigation, obstacle avoidance, precise arm control, object detection, environment mapping (SLAM), PID drive control, and more
-      - Developed PID control module for drive motors, implemented computer vision object detection system, wrote drivers for arm and drill control over UART, published python package to send messages over LoRa with Jetson TX2 SPI interface
-      - Applying skills and tools learned in engineering courses (interrupts, I2C, UART, SPI, OOP, Linux, code documentation practices) and in commerce courses (recruiting, team building, project management)
+      - Developed PID control module for drive motors, implemented computer vision object detection system, wrote drivers for arm and drill control over CAN, published python package to send messages over LoRa with Jetson TX2 SPI interface
+      - Applying skills and tools learned in engineering courses (interrupts, I2C, UART, SPI, CAN, OOP, Linux, code documentation practices) and in commerce courses (recruiting, team building, project management)
       - Developing and applying skills to rapidly deal with unexpected issues (including mechanical, electrical, and software problems)
+      - Currently building another rover based on ROS 2 with microROS and CAN for communication between embedded subsystems
   # - title: SHAD Valley
   #   location: Lakehead University
   #   start-date: Jul. 2017
